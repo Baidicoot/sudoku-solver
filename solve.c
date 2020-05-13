@@ -93,10 +93,6 @@ Grid solve(Grid start, bool* success) {
         return start;
     }
     while(start.raw[rep] != EMPTY) rep++;
-    if (rep >= 81) { //edge case, only when you input a fully completed grid
-        *success = false;
-        return start;
-    }
     Grid buf = copy(start);
     for (int i = 1; i < 10; i++) {
         buf.raw[rep] = i;

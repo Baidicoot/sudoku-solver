@@ -1,6 +1,8 @@
 #include "solve.h"
+#include "helper.h"
 #include <stdio.h>
 #include <stdbool.h>
+#include <string.h>
 
 Grid parseFile(FILE* source, bool* err) {
     *err = true;
@@ -26,6 +28,12 @@ int main(int argc, char *argv[]) {
         printf("invalid arguments\n");
         return 1;
     }
+
+    if (strcmp(argv[1], "crosses") == 0) {
+        playPerfectly();
+        return 0;
+    }
+
     FILE* h = fopen(argv[1], "r");
     Grid puzzle = parseFile(h, &err);
     if (!err) {

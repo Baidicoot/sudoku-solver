@@ -1,6 +1,6 @@
 # Sudoku Solver
 A generic solver for sudoku.
-Inspired by Chris Wilde.
+Inspired by [Chris Wilde](https://github.com/chriswilde).
 
 ## Usage
 Compile the program (if you have `gcc`) with `gcc -o sudoku main.c solve.c`.

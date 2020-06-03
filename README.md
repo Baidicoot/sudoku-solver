@@ -2,6 +2,8 @@
 A generic solver for sudoku.
 Inspired by [Chris Wilde](https://github.com/chriswilde).
 
+Now also has a solver for some Knight problem we also got given.
+
 ## Usage
 Compile the program (if you have `gcc`) with `gcc -o sudoku main.c solve.c helper.c`.
 Puzzles are inputted as raw text, with `0` representing an empty tile, in the form:
